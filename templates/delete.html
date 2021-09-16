@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<form method="post">
+    {% csrf_token %}
+    <section class="slider_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="full">
+                          <h3>Are You sure This Task Is Done???? </h3><br><br>
+                    </div>
+                                    <button type="submit">Confirm</button>
+
+                </div>
+                <div class="col-md-6">
+                    <div class="full text_align_center">
+                        <img class="slide_img" src="{% static 'images/slider_img.png' %}" alt="#" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</form>
+{% endblock %}
